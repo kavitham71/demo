@@ -8,6 +8,6 @@ git:
 # Skip the default mvn command because we want to set the profile explicitly
 install: true
 script:
-  - mvn -e install verify
+  - mvn -e install verify 
 
 
