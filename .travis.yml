@@ -2,7 +2,8 @@ language: java
 jdk:
   - oraclejdk8
 git:
-  depth: 2
+  #depth: 2
+  quiet: true
 
 # Skip the default mvn command because we want to set the profile explicitly
 install: true
