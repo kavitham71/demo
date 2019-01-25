@@ -10,10 +10,10 @@ jdk:
 
 install: true
 script:
-  - mvn -e install verify 
   - jdk_switcher use oraclejdk8
   - # do stuff with Java 8
   - jdk_switcher use openjdk8
   - # do stuff with open Java 8
-addons:
-  chrome: stable
+  - mvn -e install verify 
+#addons:
+  #chrome: stable
