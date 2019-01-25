@@ -15,3 +15,5 @@ script:
   - # do stuff with Java 8
   - jdk_switcher use openjdk8
   - # do stuff with open Java 8
+addons:
+  chrome: stable
