@@ -1,14 +1,13 @@
 language: java
 jdk:
   - oraclejdk8
-  - openjdk7
-git:
-  depth: 1
+#git:
+  #depth: 1
   #quiet: true
 
 # Skip the default mvn command because we want to set the profile explicitly
 install: true
-script:
-  - mvn -e install verify 
+#script:
+  #- mvn -e install verify 
 
 
