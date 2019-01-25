@@ -10,7 +10,8 @@ jdk:
 install: true
 script:
   - mvn -e install verify 
-matrix:
+before_script:
+ matrix:
   include:
     - jdk: oraclejdk8
   exclude:
