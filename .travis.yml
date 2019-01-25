@@ -9,7 +9,9 @@ jdk:
 # Skip the default mvn command because we want to set the profile explicitly
 
 
-install: true
+install: 
+- true
+- echo " hello " 
 script:
   - jdk_switcher use oraclejdk8
   - # do stuff with Java 8
