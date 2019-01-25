@@ -5,11 +5,13 @@ jdk:
 #git:
   #depth: 1
   #quiet: true
-
+notifications:
+  email: true
 # Skip the default mvn command because we want to set the profile explicitly
 install: true
 script:
   - mvn -e install verify 
-on : 
- branch: practice
-
+addons:
+  apt:
+    packages:
+      - oracle-java8-installer
