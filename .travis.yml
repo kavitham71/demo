@@ -1,19 +1,16 @@
 language: java
 jdk:
-  #- oraclejdk8
+  - oraclejdk8
   - openjdk8
- 
-#git:
-  #depth: 1
-  #quiet: true
-# Skip the default mvn command because we want to set the profile explicitly
+ jobs:
+   include:
+    - stage: "Tests"
+      name: "Test1"
+      script: mvn -e install verify 
+    - script: bash abc.sh 
+    - stage: "Tests"
+      name: "Test2"
+      script: bash script2.sh
 
 
-install: 
-- true
-- echo " hello " 
-script:
-  - mvn -e install verify 
-  - ./abc.sh
-#addons:
-  #chrome: stable
+
