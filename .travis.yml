@@ -14,3 +14,14 @@ jdk:
 
 
 
+<<<<<<< HEAD
+=======
+install: 
+- true
+- echo " hello " 
+script:
+  - mvn -e install verify 
+  - bash abc.sh
+#addons:
+  #chrome: stable
+>>>>>>> 14dba4ff65c3fee7feefc8740bbd051a7ac09732
