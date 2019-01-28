@@ -8,7 +8,7 @@ jobs:
       name: "Test1"
       script: mvn -e install verify 
     - script: bash abc.sh 
-    - stage: "Tests"
+    - stage: "Tests1"
       name: "Test2"
       script: bash script2.sh
 
