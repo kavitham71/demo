@@ -2,14 +2,19 @@ language: java
 jdk:
   - oraclejdk8
   - openjdk8
+#stages:
+  # - Tests
+  # - Tests2
+  # - name: Test3
+   # if: branch = master
 jobs:
    include:
-    - stage: "Tests"
-      name: "Test1"
+    - name: "Test1"
       script: mvn -e install verify 
-    - script: bash abc.sh 
+    - script: bash abc.sh
+    - name: "test2"
     - stage: "Tests1"
-      name: "Test2"
+      name: "Test3"
       script: bash script2.sh
 
 
