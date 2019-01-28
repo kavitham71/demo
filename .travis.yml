@@ -1,4 +1,4 @@
-#language: java
+language: java
 #jdk:
 #  - oraclejdk8
 #  - openjdk8
@@ -9,10 +9,14 @@
    # if: branch = master
 jobs:
    include:
-    - name: "Test1"
-      script: mvn -e install verify 
-    - script: bash abc.sh
-    - name: "test2"
+    - name: "test1"
+      script: 
+        - mvn -e install verify 
+        - echo "Running unit tests (1)"
+    - script: 
+        - bash abc.sh
+        - echo "Running unit tests (2)"
+      name: "test2"
     - stage: "Tests1"
       name: "Test3"
       script: bash script2.sh
