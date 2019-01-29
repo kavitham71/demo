@@ -19,6 +19,7 @@ jobs:
       name: "test2"
     - stage: "Tests1"
       name: "Test3"
+      dist: xenial
       script: bash script2.sh
 
 
